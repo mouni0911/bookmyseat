@@ -1,0 +1,84 @@
+.movie-booking-container{
+    text-align: center;
+    background-color: #f2f2f2;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+}
+.user-inputs{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.selects {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+.seat-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+}
+.rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.seat {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: green;
+    
+}
+.seat.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.seat.unavailable {
+    background-color: #ccc;
+    color: #888;
+}
+
+.qty {
+    font-size: 16px;
+}
+
+.selected-seats {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.seat.booked {
+    background-color: orange;
+    cursor: not-allowed;
+}

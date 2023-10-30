@@ -1,0 +1,155 @@
+.proceed-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.selected-seats {
+    margin-top: 20px;
+}
+
+.selected-seats h3 {
+    font-size: 18px;
+}
+
+.selected-seats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.selected-seats li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.movie-booking-container {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-inputs {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.selects {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.seat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    font-size: 10px;
+    width: 22px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px; 
+    cursor: pointer;
+    border: 1px solid #1ea83c;
+    color: #1ea83c;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: background-color 0.3s;
+        /* Add a transition for smooth color change */
+   
+}
+.seat:hover{
+    background-color: #1ea83c;
+    color: #fff;
+}
+/* Add space after A3 column */
+.seat-row:nth-child(3) .seat:nth-child(4n) {
+    margin-right: 20px;
+}
+
+/* Add space after A16 column */
+.seat-row:nth-child(16) .seat:nth-child(4n) {
+    margin-right: 20px;
+}
+
+.seat.selected {
+    background-color: #1ea83c;
+    color: #fff;
+}
+.seat.booked {
+    background-color:rgb(172, 169, 165);
+    /* Gray for booked seats */
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+.qty {
+    font-size: 16px;
+}
+
+.selected-seats {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.seat.disabled {
+    background-color: #6d6a6a;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.info{
+    display: flex;
+    font-weight:600;
+    justify-content: center;
+}
+p{
+    padding-right: 30px;
+}
+span{
+    color: orange;
+    font-weight: bolder;
+}
+
